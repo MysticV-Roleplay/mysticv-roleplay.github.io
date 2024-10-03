@@ -4,19 +4,19 @@ body {
 }
 
 h2 {
-    color: #9370db; 
+    color: #9370db;
 }
 
 a {
-    color: #9370db;
+    color: #9370db; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 footer {
-    background: #4b0082; 
+    background: #4b0082;
 }
