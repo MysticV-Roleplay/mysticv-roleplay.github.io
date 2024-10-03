@@ -10,6 +10,7 @@ body {
     background-color: #000000; 
     text-align: center;
     padding: 60px 0;
+    position: relative;
 }
 
 .logo {
@@ -108,8 +109,10 @@ h1 {
 }
 
 .button-container {
-    display: flex;
-    justify-content: center; 
+    display: flex; 
+    justify-content: flex-end; 
     gap: 10px; 
-    margin-top: 20px; 
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
 }
