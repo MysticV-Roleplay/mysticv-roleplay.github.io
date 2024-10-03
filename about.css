@@ -1,86 +1,93 @@
-
 body {
-    font-family: 'Roboto', sans-serif; 
+    background-color: #000000; 
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2; 
-    color: #333; 
 }
-
 
 .header {
+    background-color: #000000; 
     text-align: center;
-    padding: 60px 20px;
-    background-color: #2c3e50; 
-    color: white;
+    padding: 60px 0;
 }
 
-.header h1 {
-    font-size: 2.5em;
-    margin: 0;
+.logo {
+    width: 50px;
+    height: auto; 
+    display: block;
+    margin: 0 auto 20px; 
 }
 
-.header .lead {
-    font-size: 1.2em;
+h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-
-nav {
-    margin-top: 20px;
+.lead {
+    font-size: 1.5rem;
 }
-
-nav .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #e67e22; 
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-weight: bold;
-}
-
-nav .btn:hover {
-    background-color: #d35400;
-}
-
 
 .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 .card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 15px; 
-    padding: 20px;
-    width: 280px;
-    text-align: center;
-    transition: transform 0.3s; 
+    background-color: #1f1f1f;
+    border: 2px solid #6b46c1; 
+    border-radius: 15px;
+    padding: 40px;
+    margin: 20px;
+    width: 300px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(107, 70, 193, 0.7);
 }
 
 .card-title {
-    font-size: 1.5em;
-    margin: 0;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
 }
 
 .card-text {
-    margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6b46c1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #553c9a; 
+}
 
 .footer {
+    background-color: #000000;
     text-align: center;
-    padding: 15px;
-    background-color: #2c3e50; 
-    color: white;
+    padding: 30px 0;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
