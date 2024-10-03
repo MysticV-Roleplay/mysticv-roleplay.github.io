@@ -1,16 +1,21 @@
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
 
 header, footer {
-    background-color: #000;
+    background-color: #2d2d2d;
 }
 
 button {
-    background-color: #6b46c1;
+    background-color: #6b46c1; 
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #553c9a;
+    background-color: #553c9a; 
+}
+
+input {
+    border-color: #6b46c1; 
 }
