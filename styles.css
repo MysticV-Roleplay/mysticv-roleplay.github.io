@@ -91,3 +91,21 @@ h1 {
         opacity: 1;
     }
 }
+
+.btn-simple {
+    background-color: transparent;
+    color: #6b46c1;
+    border: 1px solid #6b46c1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-simple:hover {
+    background-color: #6b46c1;
+    color: white;
+}
