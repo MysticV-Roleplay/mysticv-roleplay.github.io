@@ -1,89 +1,16 @@
 body {
-    background-color: #000000; 
-    color: #e0e0e0;
-    font-family: 'Arial', sans-serif;
-    overflow-x: hidden;
+    background-color: #000;
+    color: #fff;
 }
 
-header {
-    animation: fadeInDown 1s ease-in-out;
-    padding: 60px 0;
-    background-color: #1f1f1f; 
+header, footer {
+    background-color: #000;
 }
 
-h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+button {
+    background-color: #6b46c1;
 }
 
-.lead {
-    font-size: 1.5rem;
-}
-
-.animated-card {
-    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
-    background-color: #1f1f1f;
-    border: 2px solid #4b0082; 
-    border-radius: 20px;
-    padding: 40px;
-    height: auto; 
-    position: relative;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px; 
-}
-
-.animated-card:hover {
-    transform: translateY(-15px) scale(1.05);
-    box-shadow: 0 16px 40px rgba(0, 255, 0, 0.7);
-    background-color: #2a2a2a;
-}
-
-.animated-button {
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    height: 50px;
-    width: 100%; 
-    margin: 10px 0; 
-    border-radius: 8px;
-    font-weight: bold;
-    display: inline-block; 
-}
-
-.animated-button:hover {
-    transform: scale(1.1);
-    background-color: #4b0082; 
-    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.5);
-}
-
-footer {
-    animation: fadeInUp 1s ease-in-out;
-    padding: 30px 0;
-    background-color: #1f1f1f;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@media (max-width: 576px) {
-    h1 {
-        font-size: 2.5rem;
-    }
+button:hover {
+    background-color: #553c9a;
 }
