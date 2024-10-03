@@ -6,7 +6,7 @@ body {
 }
 
 header, footer {
-    background-color: #000000;
+    background-color: #000000; 
 }
 
 h1 {
@@ -19,9 +19,9 @@ h1 {
 }
 
 .animated-card {
-    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
     background-color: #1f1f1f;
-    border: 2px solid #6b46c1; 
+    border: 2px solid #6b46c1;
     border-radius: 20px;
     padding: 40px;
     height: 400px; 
@@ -45,7 +45,30 @@ h1 {
     line-height: 1.6;
 }
 
+.btn-purple {
+    background-color: #6b46c1;
+    color: white;
+}
+
+.btn-purple:hover {
+    background-color: #553c9a; 
+}
+
 footer {
     padding: 30px 0;
     background-color: #000000; 
+}
+
+/* Animationen */
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
