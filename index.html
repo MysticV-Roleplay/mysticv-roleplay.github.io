@@ -14,6 +14,7 @@
         <h1 class="fadeIn">MysticV Roleplay</h1>
         <p class="lead fadeIn">Willkommen auf der Website unseres FiveM-Servers.</p>
         <a href="ueber-uns.html" class="btn btn-simple">Über Uns</a>
+        <button class="btn btn-simple" onclick="connectToServer()">Zum Server verbinden</button>
     </header>
 
     <main class="container">
@@ -39,6 +40,13 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        function connectToServer() {
+            const serverAddress = "brown-salmon-22273.zap.cloud";
+            const command = `fivem://connect/${serverAddress}`; 
+            window.open(command, '_self'); 
+        }
+    </script>
 </body>
 
 </html>
