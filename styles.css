@@ -7,8 +7,19 @@ h2 {
     color: #9370db; 
 }
 
+.custom-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #9370db; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.custom-button {
+    margin: 20px 0; 
+}
+
 a {
-    color: #9370db; 
+    color: #9370db;
     text-decoration: none;
     transition: color 0.3s ease;
 }
