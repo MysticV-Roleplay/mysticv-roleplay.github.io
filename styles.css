@@ -5,9 +5,8 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    padding: 60px 0;
-    background-color: #1f1f1f; 
+header, footer {
+    background-color: #000000;
 }
 
 h1 {
@@ -25,10 +24,15 @@ h1 {
     border: 2px solid #6b46c1; 
     border-radius: 20px;
     padding: 40px;
-    height: auto;
+    height: 400px; 
     position: relative;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
     margin-bottom: 20px; 
+}
+
+.animated-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 16px 40px rgba(107, 70, 193, 0.7);
 }
 
 .card-title {
@@ -43,5 +47,5 @@ h1 {
 
 footer {
     padding: 30px 0;
-    background-color: #1f1f1f;
+    background-color: #000000; 
 }
