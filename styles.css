@@ -2,11 +2,14 @@ body {
     background-color: #000000; 
     color: #e0e0e0;
     font-family: 'Arial', sans-serif;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-header, footer {
-    background-color: #000000; 
+.header {
+    background-color: #000000;
+    text-align: center;
+    padding: 60px 0;
 }
 
 h1 {
@@ -18,20 +21,26 @@ h1 {
     font-size: 1.5rem;
 }
 
-.animated-card {
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    background-color: #1f1f1f;
-    border: 2px solid #6b46c1;
-    border-radius: 20px;
-    padding: 40px;
-    height: 400px; 
-    position: relative;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px; 
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
-.animated-card:hover {
-    transform: translateY(-10px) scale(1.05);
+.card {
+    background-color: #1f1f1f;
+    border: 2px solid #6b46c1; 
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px;
+    width: 300px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
     box-shadow: 0 16px 40px rgba(107, 70, 193, 0.7);
 }
 
@@ -45,30 +54,33 @@ h1 {
     line-height: 1.6;
 }
 
-.btn-purple {
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #6b46c1;
     color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.btn-purple:hover {
+.btn:hover {
     background-color: #553c9a; 
 }
 
-footer {
-    padding: 30px 0;
+.footer {
     background-color: #000000; 
+    text-align: center;
+    padding: 30px 0;
 }
 
-/* Animationen */
-.animated {
+.fadeIn {
     opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s forwards;
+    animation: fadeIn 0.5s forwards;
 }
 
-@keyframes fadeInUp {
+@keyframes fadeIn {
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
