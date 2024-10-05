@@ -1,9 +1,13 @@
+
 body {
     background-color: #000000; 
     color: #e0e0e0;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -33,6 +37,7 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
+    flex-grow: 1; 
 }
 
 .card {
@@ -43,6 +48,17 @@ h1 {
     margin: 20px;
     width: 300px; 
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(107, 70, 193, 0.7);
+}
+
+.card-title {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
 }
 
 .btn {
@@ -52,11 +68,12 @@ h1 {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
     background-color: #553c9a; 
+    transform: scale(1.05);
 }
 
 .footer {
