@@ -1,7 +1,5 @@
-import { marked } from 'marked';
-
-const posts: string[] = ['blogs/beitrag1.md', 'blogs/beitrag2.md'];
 async function loadBlogPosts() {
+    const posts = ['blogs/beitrag1.md', 'blogs/beitrag2.md'];
     const blogContainer = document.getElementById('blog-posts');
     if (!blogContainer) return;
 
@@ -9,7 +7,7 @@ async function loadBlogPosts() {
         try {
             const response = await fetch(post);
             const data = await response.text();
-            const html = marked(data);
+            const html = marked(data); 
             const postContainer = document.createElement('div');
             postContainer.innerHTML = html;
             blogContainer.appendChild(postContainer);
@@ -18,5 +16,4 @@ async function loadBlogPosts() {
         }
     }
 }
-
 document.addEventListener('DOMContentLoaded', loadBlogPosts);
