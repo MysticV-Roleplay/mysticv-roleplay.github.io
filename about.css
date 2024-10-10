@@ -1,7 +1,12 @@
+@font-face {
+    font-family: 'DIN 1451';
+    src: url('fonts/DIN1451.ttf') format('truetype');
+}
+
 body {
     background-color: #000000 !important;
     color: #ffffff !important;
-    font-family: 'Arial', sans-serif;
+    font-family: 'DIN 1451', sans-serif;
     margin: 0;
     padding: 0;
 }
